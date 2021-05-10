@@ -1,0 +1,3 @@
+[submodule "Experiments/ldjansen/Android Volley/Experiments/ldjansen/Android"]
+	path = Experiments/ldjansen/Android Volley/Experiments/ldjansen/Android
+	url = https://github.com/google/volley
