@@ -1,4 +1,4 @@
-# MC_3
+# Com S 309 - Spring 2021 - Puzzle Game App
 
 This is a group project between Levi Jansen, Eric Kirch, Justin Le, and Cris Medina.
 We are mostly - if not all - newbies.
