@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardActivity">
+
+    <TextView
+        android:id="@+id/leaderBoard"
+        android:layout_width="386dp"
+        android:layout_height="80dp"
+        android:text="Leaderboard"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:translationX="15sp"
+        android:translationY="10sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/searchNotif"
+        android:layout_width="386dp"
+        android:layout_height="49dp"
+        android:text="Search by Puzzle ID"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:translationX="14sp"
+        android:translationY="80sp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/searchID"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:translationX="20sp"
+        android:translationY="120sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSubmitID"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:translationX="270sp"
+        android:translationY="130sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/puzzleNameLabel"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="Puzzle Name:"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="14sp"
+        android:translationY="220sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="200dp"
+        android:layout_height="509dp"
+        android:text="Rank:\n\n1\n\n2\n\n3\n\n4\n\n5"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="14sp"
+        android:translationY="260sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:text="Time:"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="260sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerNameLabel"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="Score Holder:"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="260sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/puzzleName"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="MissingName"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="220sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="318sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="376sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time3"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="434sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time4"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="492sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time5"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="100sp"
+        android:translationY="550sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerName1"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="318sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerName2"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="376sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerName3"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="434sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerName4"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="492sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerName5"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="N/A"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:translationX="200sp"
+        android:translationY="550sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLHome"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:translationX="25sp"
+        android:translationY="625sp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

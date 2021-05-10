@@ -1,0 +1,4 @@
+include ':Android'
+include ':gradle-wrapper'
+include ':app'
+rootProject.name = "PuzzleGame"

@@ -1,0 +1,158 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="1dp"
+    android:paddingTop="16dp"
+    tools:context="coms.example.puzzlegame.MainActivity" >
+
+    <Button
+        android:id="@+id/btnAccountSettings"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Account Settings"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCreatePuzzle"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Create Puzzle"
+        android:translationY="100sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/btnPlayPuzzle"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Play Puzzle"
+        android:translationY="50sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <Button
+        android:id="@+id/btnGoToLeaderboard"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"
+        android:translationY="150sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/loginNotif"
+        android:layout_width="396dp"
+        android:layout_height="136dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:translationX="-15sp"
+        android:translationY="0sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/emailNotif"
+        android:layout_width="396dp"
+        android:layout_height="136dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:translationX="-15sp"
+        android:translationY="70sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:translationY="120sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <TextView
+        android:id="@+id/passwordNotif"
+        android:layout_width="396dp"
+        android:layout_height="136dp"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:translationX="-15sp"
+        android:translationY="195sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:translationY="245sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <Button
+        android:id="@+id/btnSubmitUserInfo"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:translationY="500sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:translationY="500sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:translationY="550sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="672dp" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Report a puzzle"
+        android:translationY="200sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

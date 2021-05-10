@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>build.gradle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000043; font-weight: bold;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+build.gradle</font>
+</center></td></tr></table>
+<pre><span class="s0">// NOTE: The only changes that belong in this file are the definitions</span>
+<span class="s0">// of tool versions (gradle plugin, compile SDK, build tools), so that</span>
+<span class="s0">// Volley can be built via gradle as a standalone project.</span>
+<span class="s0">//</span>
+<span class="s0">// Any other changes to the build config belong in rules.gradle, which</span>
+<span class="s0">// is used by projects that depend on Volley but define their own</span>
+<span class="s0">// tools versions across all dependencies to ensure a consistent build.</span>
+<span class="s0">//</span>
+<span class="s0">// Most users should just add this line to settings.gradle:</span>
+<span class="s0">//     include(&quot;:volley&quot;)</span>
+<span class="s0">//</span>
+<span class="s0">// If you have a more complicated Gradle setup you can choose to use</span>
+<span class="s0">// this instead:</span>
+<span class="s0">//     include(&quot;:volley&quot;)</span>
+<span class="s0">//     project(':volley').buildFileName = 'rules.gradle'</span>
+
+<span class="s2">import </span>net.ltgt.gradle.errorprone.CheckSeverity
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath <span class="s3">'com.android.tools.build:gradle:3.2.1'</span>
+    }
+}
+
+plugins {
+    id <span class="s3">&quot;com.github.sherter.google-java-format&quot; </span>version <span class="s3">&quot;0.6&quot;</span>
+    <span class="s0">// NOTE: 0.7 or newer will require upgrading to a newer Android gradle plugin:</span>
+    <span class="s0">// https://github.com/tbroyer/gradle-errorprone-plugin/commit/65b1026ebeae1b7ed8c28578c7f6eea512c16bea</span>
+    id <span class="s3">&quot;net.ltgt.errorprone&quot; </span>version <span class="s3">&quot;0.6.1&quot;</span>
+}
+
+googleJavaFormat {
+    toolVersion = <span class="s3">'1.5'</span>
+    options style: <span class="s3">'AOSP'</span>
+}
+
+apply plugin: <span class="s3">'com.android.library'</span>
+
+repositories {
+    jcenter()
+    google()
+}
+
+dependencies {
+    <span class="s0">// NOTE: Updating ErrorProne introduces new checks that may cause the build to fail. Pin to a</span>
+    <span class="s0">// specific version to control these updates.</span>
+    errorprone(<span class="s3">&quot;com.google.errorprone:error_prone_core:2.3.2&quot;</span>)
+    <span class="s0">// ErrorProne requires a JDK 9 compiler, so pull one in as a dependency since we use Java 8:</span>
+    <span class="s0">// https://github.com/tbroyer/gradle-errorprone-plugin#jdk-8-support</span>
+    errorproneJavac(<span class="s3">&quot;com.google.errorprone:javac:9+181-r4173-1&quot;</span>)
+}
+
+group = <span class="s3">'com.android.volley'</span>
+version = <span class="s3">'1.2.0-SNAPSHOT'</span>
+
+android {
+    compileSdkVersion <span class="s4">28</span>
+    buildToolsVersion = <span class="s3">'28.0.3'</span>
+
+    defaultConfig {
+        minSdkVersion <span class="s4">8</span>
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.errorprone {
+        check(<span class="s3">&quot;ParameterComment&quot;</span>, CheckSeverity.ERROR)
+    }
+}
+
+apply from: <span class="s3">'rules.gradle'</span>
+apply from: <span class="s3">'publish.gradle'</span>
+</pre>
+</body>
+</html>

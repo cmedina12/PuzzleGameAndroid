@@ -1,0 +1,17 @@
+<html>
+<body>
+	<p th:text="'Puzzle Name: ' + ${viewImage.getPuzzleName()}" />
+	<p id="url" style="visibility: hidden;" value=${viewImage.getPuzzleData()} th:text="'http://coms-309-010.cs.iastate.edu/'+${viewImage.getPuzzleData()}"/>
+    
+	<img src="" id="imgData">
+	<br>
+    <a href="/viewImage">Find Another</a>
+    
+    	
+	<script>
+	    var loc=document.getElementById("url").innerHTML;  
+	    document.getElementById("imgData").src = loc; 
+    </script>
+
+</body>
+</html>

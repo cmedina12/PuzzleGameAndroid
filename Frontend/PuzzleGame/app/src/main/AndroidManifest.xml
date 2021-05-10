@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="coms.example.puzzlegame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:background="@color/green"
+        android:icon="@mipmap/ic_launcher"
+        android:label="The Puzzle Game"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PuzzleGame"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StringRequestActivity" />
+        <activity android:name=".CreatePuzzleActivity" />
+        <activity android:name=".SelectPuzzleActivity" />
+        <activity android:name=".PlayPuzzleActivity" />
+        <activity android:name=".PuzzleCompleteActivity" />
+        <activity android:name=".LeaderboardActivity" />
+        <activity android:name=".ReportActivity" />
+    </application>
+
+</manifest>

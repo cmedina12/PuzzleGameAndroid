@@ -1,0 +1,10 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Puzzle Upload Success</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1><p th:text="'Your puzzle code is: ' + ${puzzle.getId()}" /></h1>
+	<a href="/uploadImage">Upload another puzzle</a>
+</body>
+</html>

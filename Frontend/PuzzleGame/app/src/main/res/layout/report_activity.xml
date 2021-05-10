@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+
+    <TextView
+        android:id="@+id/titleReport"
+        android:layout_width="386dp"
+        android:layout_height="80dp"
+        android:text="Report a puzzle"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:translationX="5sp"
+        android:translationY="10sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/IDNotif"
+        android:layout_width="386dp"
+        android:layout_height="49dp"
+        android:text="Enter Puzzle Code"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:translationX="0sp"
+        android:translationY="90sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/puzzleID"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="80sp"
+        android:translationY="130sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/descNotif"
+        android:layout_width="386dp"
+        android:layout_height="49dp"
+        android:text="Enter reason for your report"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:translationX="0sp"
+        android:translationY="250sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/reportDesc"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="65sp"
+        android:translationY="280sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:translationX="15sp"
+        android:translationY="450sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

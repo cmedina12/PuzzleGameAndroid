@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login Successful</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1><p th:text="'Welcome ' + ${login.getName()}" /></h1>
+	<p th:text="'User ID: ' + ${login.getId()}" />
+	<a href="/changeEmail">Change E-Mail</a>
+	<br>
+	<a href="/changePassword">Change Password</a>
+	<br>
+	<a href="/deleteAccount">Delete Account</a>
+	<br>
+    <a href="/login">Log out</a>
+</body>
+</html>

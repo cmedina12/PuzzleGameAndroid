@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Puzzle Game Account Creator</title>
+</head>
+<body>
+<h1>Account Creation</h1>
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
+	<p>Name: <input type="text" th:field="*{name}" /> (35 characters max)</p>
+        <p>E-Mail: <input type="text" th:field="*{email}" /> (50 characters max)</p>
+        <p>Password: <input type="password" th:field="*{password}" /> (20 characters max)</p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</body>
+</html>

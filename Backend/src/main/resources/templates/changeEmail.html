@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Change E-Mail</title>
+</head>
+<body>
+<h1>Enter Information</h1>
+<form action="#" th:action="@{/changeEmail}" th:object="${changeEmail}" method="post">
+        <p>E-Mail: <input type="text" th:field="*{email}" /></p>
+        <p>Password: <input type="password" th:field="*{password}" /></p>
+         <p>New E-Mail: <input type="text" th:field="*{name}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</body>
+</html>

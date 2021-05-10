@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="1dp"
+    android:paddingTop="16dp"
+    tools:context="coms.example.puzzlegame.MainActivity" >
+
+    <TextView
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:text="@string/account_page"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnStringReq"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Get User ID" />
+
+    <Button
+        android:id="@+id/btnChangeEmailRequest"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Change Email" />
+
+    <Button
+        android:id="@+id/btnChangePwdRequest"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Delete Account" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Username: " />
+
+    <TextView
+        android:id="@+id/msgResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Email Status: " />
+
+    <TextView
+        android:id="@+id/msgEmailResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/msgPwdResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/home3">
+
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="coms.example.puzzlegame.Leaderboard"
+        android:label="fragment_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+    <fragment
+        android:id="@+id/home3"
+        android:name="coms.example.puzzlegame.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/account2"
+        android:name="coms.example.puzzlegame.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/puzzleDifficulty"
+        android:name="coms.example.puzzlegame.PuzzleDifficulty"
+        android:label="fragment_puzzle_difficulty"
+        tools:layout="@layout/fragment_puzzle_difficulty" />
+    <fragment
+        android:id="@+id/createPuzzle"
+        android:name="coms.example.puzzlegame.CreatePuzzle"
+        android:label="fragment_create_puzzle"
+        tools:layout="@layout/fragment_create_puzzle" />
+    <fragment
+        android:id="@+id/playPuzzle"
+        android:name="coms.example.puzzlegame.PlayPuzzle"
+        android:label="fragment_play_puzzle"
+        tools:layout="@layout/fragment_play_puzzle" />
+    <fragment
+        android:id="@+id/gameplay"
+        android:name="coms.example.puzzlegame.Gameplay"
+        android:label="fragment_gameplay"
+        tools:layout="@layout/fragment_gameplay" />
+    <fragment
+        android:id="@+id/gameResults"
+        android:name="coms.example.puzzlegame.GameResults"
+        android:label="fragment_game_results"
+        tools:layout="@layout/fragment_game_results" />
+</navigation>

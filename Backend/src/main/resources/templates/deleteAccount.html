@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Delete Account</title>
+</head>
+<body>
+<h1>Enter Information if you are sure you'd like to delete your account</h1>
+<form action="#" th:action="@{/deleteAccount}" th:object="${deleteAccount}" method="post">
+        <p>E-Mail: <input type="text" th:field="*{email}" /></p>
+        <p>Password: <input type="password" th:field="*{password}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</body>
+</html>
